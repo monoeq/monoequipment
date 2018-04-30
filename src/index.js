@@ -98,7 +98,7 @@ function mainview () {
         monoequipment
       </h1>
       <p class="p1 s1">
-        opinionated <a href="https://github.com/choojs/nanocomponent" target="_blank">nanocomponents</a> for websites
+        particular <a href="https://github.com/choojs/nanocomponent" target="_blank">nanocomponents</a> for websites
       </p>
       <ul class="p1 s1">
         <li><a class="external" target="_blank" href="https://github.com/jongacnik/monolazy">monolazy</a></li>
