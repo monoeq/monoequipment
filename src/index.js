@@ -72,6 +72,19 @@ css`
 
 var app = choo()
 
+app.use(function () {
+  // ios vh hack
+  var navigator = window.navigator
+  var isios = (function detect_iOS (userAgent) {
+    return /iPad|iPhone|iPod/.test(userAgent)
+  })(navigator ? navigator.userAgent : '')
+  var style = html`<style></style>`
+  if (el && isios) {
+    style.innerHTML = `.vhmn100{min-height:${window.innerHeight}px}`
+  }
+  document.head.appendChild(style)
+})
+
 function mainview () {
   return html`
     <body class="x xjc xac xdc vhmn100 p1 fs2-4 tac rows psr" sm="fs3-2">
