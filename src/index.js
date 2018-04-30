@@ -6,12 +6,6 @@ css('ress')
 css('gr8')
 
 css`
-  @font-face {
-    font-family: 'StandardBook';
-    src: url('assets/standard-book-webfont.woff2') format('woff2'),
-         url('assets/standard-book-webfont.woff') format('woff');
-  }
-
   html {
     font-size: 62.5%;
   }
@@ -19,7 +13,7 @@ css`
   body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-family: 'StandardBook', Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
   }
 
   h1, h2, h3, h4, h5, h6, h7 {
