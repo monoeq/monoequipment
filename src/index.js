@@ -78,11 +78,11 @@ app.use(function () {
   var isios = (function detect_iOS (userAgent) {
     return /iPad|iPhone|iPod/.test(userAgent)
   })(navigator ? navigator.userAgent : '')
-  var style = html`<style></style>`
-  if (el && isios) {
+  if (isios) {
+    var style = html`<style></style>`
     style.innerHTML = `.vhmn100{min-height:${window.innerHeight}px}`
+    document.head.appendChild(style)
   }
-  document.head.appendChild(style)
 })
 
 function mainview () {
