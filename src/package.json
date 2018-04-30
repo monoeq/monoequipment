@@ -1,0 +1,23 @@
+{
+  "name": "mono-equipment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "watchify -t sheetify index.js -o ../bundles/bundle.js",
+    "build": "browserify -t sheetify -t nanohtml -p tinyify index.js -o ../bundles/bundle.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "choo": "^6.11.0-preview1",
+    "gr8": "^3.1.5",
+    "ress": "^1.2.2",
+    "sheetify": "^7.3.2"
+  },
+  "devDependencies": {
+    "nanohtml": "^1.2.4",
+    "tinyify": "^2.4.0"
+  }
+}
