@@ -52,7 +52,7 @@ css`
     border-bottom: 1px dashed black;
   }*/
 
-  a:hover {
+  .no-touch a:hover {
     display: inline-block;
     transform: rotateY(180deg);
   }
@@ -71,6 +71,12 @@ css`
 `
 
 var app = choo()
+
+app.use(function () {
+  if (!require('haz-touch')) {
+    document.documentElement.classList.add('no-touch')
+  }
+})
 
 app.use(function () {
   // ios vh hack
